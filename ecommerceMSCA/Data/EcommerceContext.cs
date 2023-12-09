@@ -6,10 +6,10 @@ namespace ecommerceDemo.Data
 {
     public class EcommerceContext : DbContext
     {
-        public DbSet<Customer> Customer { get; set; } = null!; // match the name of the table in the database
-        public DbSet<Order> Order { get; set; } = null!; // match the name of the table in the database
-        public DbSet<Product> Product { get; set; } = null!; // match the name of the table in the database
-        public DbSet<OrderDetail> OrderDetail { get; set; } = null!; // match the name of the table in the database
+        public DbSet<Customer> Customers { get; set; } = null!; // match the name of the table in the database
+        public DbSet<Order> Orders { get; set; } = null!; // match the name of the table in the database
+        public DbSet<Product> Products { get; set; } = null!; // match the name of the table in the database
+        public DbSet<OrderDetail> OrderDetails { get; set; } = null!; // match the name of the table in the database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

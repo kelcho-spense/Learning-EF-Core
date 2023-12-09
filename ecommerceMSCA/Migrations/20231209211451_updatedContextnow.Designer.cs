@@ -9,11 +9,11 @@ using ecommerceDemo.Data;
 
 #nullable disable
 
-namespace ecommerceDemo.Migrations
+namespace ecommerceMSCA.Migrations
 {
     [DbContext(typeof(EcommerceContext))]
-    [Migration("20231209141130_addemailmigration")]
-    partial class addemailmigration
+    [Migration("20231209211451_updatedContextnow")]
+    partial class updatedContextnow
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,7 +56,7 @@ namespace ecommerceDemo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customer");
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("ecommerceDemo.Models.Order", b =>
@@ -80,7 +80,7 @@ namespace ecommerceDemo.Migrations
 
                     b.HasIndex("CustomerID");
 
-                    b.ToTable("Order");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ecommerceDemo.Models.OrderDetail", b =>
@@ -106,7 +106,7 @@ namespace ecommerceDemo.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderDetail");
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("ecommerceDemo.Models.Product", b =>
@@ -126,7 +126,7 @@ namespace ecommerceDemo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("ecommerceDemo.Models.Order", b =>

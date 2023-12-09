@@ -13,4 +13,5 @@ namespace ecommerceDemo.Models
         [Column(TypeName = "decimal(6,2)")] // 2 decimal places, 6 digits
         public decimal Price { get; set; }
     }
+
 }
